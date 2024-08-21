@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="index.js" type="text/javascript" defer></script>
+    <title>Decoder</title>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li class="logo-ligth">
+                        <img src="imagens\alura-logo.svg" alt="Alura logo">
+                    </li>
+                    <!-- <li class="logo-dark">
+                        <h1>M</h1>
+                    </li> -->
+                </ul>
+            </nav>
+        </aside>
+        <section class="container">
+            <section class="left-panel">
+                <div class="text-panel">
+                    <div>
+                        <textarea id="textoCriptografar" maxlength="2000" rows="1"
+                            placeholder="Digite seu texto aqui" class="left-textarea"></textarea>
+                    </div>
+                    <div>
+                        <p class="attention-text">
+                            <span class="attention">!</span>
+                            Apenas letras minúsculas e sem acento.
+                        </p>
+                        <div class="buttons">
+                            <button class="encrypt" id="criptografar">
+                                Criptografar
+                            </button>
+                            <button class="decrypt" id="descriptografar">
+                                Descriptografar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="right-panel">
+                <div class="right-panel-container no-text">
+                    <div class="right-panel-box">
+                        <figure class="light-panel-image">
+                            <img src="imagens/diamante.svg"
+                                alt="Person's image holding a magnifying glass to see a diamond.">
+                        </figure>
+                        <div>
+                            <h3>Nenhuma mensagem encontrada</h3>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="encryption-text display-none">
+                    <div class="conteiner-criptografia">
+                        <div>
+                            <textarea id="textoCriptografado"  class="rigth-textarea" readonly></textarea>
+                        </div>
+                        <div class="secondary-buttons">
+                            <button id="copiar">Copiar</button>
+                            <button id="apagar">Apagar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="center-text">
+            &copy; Desenvolvido por Bruno Bianconcini
+        </div>
+        <div>
+            <figure class="logos">
+                <div class="networks">
+                    <a href="https://www.linkedin.com/in/brunobianconcini/" target="_blank">
+                        <img src="imagens/linkedin.png" alt="logoLinkedin">
+                    </a>
+                    <a href="https://github.com/brunobianconcini" target="_blank">
+                        <img src="imagens/github.png" alt="logoGitHub">
+                    </a>
+                    <a href="https://www.instagram.com//" target="_blank">
+                        <img src="imagens/instagram.png" alt="logoInstagram">
+                    </a>
+                </div>
+                <figcaption>Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </figcaption>
+            </figure>
+        </div>
+    </footer>
+</body>
+
+</html>
